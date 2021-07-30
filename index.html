@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <nav>
+        <h1>Hello</h1>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="#">Team</a>
+                    <a href="#">Idea</a>
+                    <a href="#">Mission</a>
+                    <a href="#">Support</a>
+                  </div>
+            </li>
+            <li><a href="#news">Trips</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Gallery</a>
+              <div class="dropdown-content">
+                <a href="#">Iceland</a>
+                <a href="#">Norway</a>
+                <a href="#">Arctica</a>
+                <a href="#">Alaska</a>
+              </div>
+            </li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+    </nav>
+    <section class="first-section container">
+        <h1>Hello</h1>
+    </section>
+    <section class="gallery-section container">
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/fotolia_170367715.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(7)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png"
+                    onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(9)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/seacost.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
+                    onclick="openModal();currentSlide(11)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 11</div>
+                    <img src="assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 11</div>
+                    <img src="assets/fotolia_170367715.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 11</div>
+                    <img src="assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 11</div>
+                    <img src="assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 11</div>
+                    <img src="assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
+                        style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 11</div>
+                    <img src="assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
+                        style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 11</div>
+                    <img src="assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 11</div>
+                    <img src="assets/landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png"
+                        style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 11</div>
+                    <img src="assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 11</div>
+                    <img src="assets/seacost.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 11</div>
+                    <img src="assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
