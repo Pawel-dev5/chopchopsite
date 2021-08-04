@@ -30,11 +30,11 @@
 }
 @media (max-width: 770px) and (min-width: 426px) {
   .column {
-    width: 27.89% !important;
+    // width: 27.89% !important;
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   nav > div:nth-child(1) {
     width: 40%;
   }
