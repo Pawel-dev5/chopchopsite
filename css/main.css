@@ -7,6 +7,61 @@ body {
 
 button {
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 4px solid #53686c;
+  font-size: 22px;
+  color: #53686c;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+button:hover {
+  background-color: #53686c;
+  color: #f9f9f9;
+}
+
+.heading {
+  margin-top: 0;
+  font-size: 49px;
+  font-weight: bold;
+  color: #53686c;
+}
+
+.heading--black {
+  color: black;
+}
+
+.container {
+  padding: 50px 115px 50px 115px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #575756;
+}
+
+.container--white {
+  background-color: white;
+}
+
+.container__div {
+  display: flex;
+}
+
+.container__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__box--start {
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
+  width: 100%;
 }
 
 nav {
@@ -18,15 +73,10 @@ nav {
   color: black;
   position: absolute;
 }
-
-nav > div {
+nav .width--50 {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-nav > div > h1 {
+nav .width--50 h1 {
   font-size: 50px;
   font-weight: 900;
 }
@@ -100,76 +150,14 @@ li.dropdown {
   display: block;
 }
 
-.second-section {
-  max-width: 100%;
-  padding: 50px 95px 50px 95px;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
-  color: #575756;
+.container__div div:nth-child(1) {
+  padding-right: 25px;
+}
+.container__div div:nth-child(2) {
+  margin-left: 25px;
 }
 
-.second-section-txt-box {
-  display: flex;
-}
-
-.second-section > h1 {
-  font-size: 49px;
-  font-weight: bold;
-  color: #53686c;
-  padding: 10px 25px 0 25px;
-  margin: 0;
-}
-
-.second-section-txt-box > div {
-  width: 50%;
-  padding: 25px;
-}
-
-.third-section {
-  padding: 50px 115px 50px 115px;
-  background-color: #f9f9f9;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
-  color: #575756;
-}
-
-.third-section > h1 {
-  margin-top: 0;
-  font-size: 49px;
-  font-weight: bold;
-  color: #53686c;
-}
-
-.third-section-text-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.third-section-text-box > button {
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  border: 4px solid #53686c;
-  font-size: 22px;
-  color: #53686c;
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-.third-section-text-box > button:hover {
-  background-color: #53686c;
-  color: #f9f9f9;
-}
-
-.third-section-text-box > p {
-  margin-top: 0;
-}
-
-.third-section-photo > div:nth-child(1) {
+.container__box--photo {
   background-image: url("../src/assets/landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png");
   min-width: 350px;
   min-height: 256px;
@@ -178,16 +166,10 @@ li.dropdown {
   margin: 0 45px 45px 0;
 }
 
-.third-section-photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .header {
   width: 100%;
   height: 100%;
-  min-height: 40rem;
+  min-height: 40em;
   background-image: url("../src/assets/seacost.jpg");
   background-size: cover;
   background-position-y: -350px;
@@ -195,52 +177,37 @@ li.dropdown {
   align-items: center;
   justify-content: center;
 }
+.header div > div p {
+  font-size: 21px;
+  font-weight: 600;
+}
+.header div > div button {
+  margin-left: 50px;
+  width: 175px;
+  height: 55px;
+  border: 4px solid white;
+  color: white;
+  background-color: transparent;
+}
+.header div > div button:hover {
+  background-color: #53686c;
+  color: white;
+}
 
-.header > div {
+.header-box {
   margin-top: 5rem;
   padding-left: 50px;
   width: 50%;
   color: white;
 }
-
-.header > div > h1 {
+.header-box h1 {
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 0;
 }
 
-.header > div > div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.header > div > div > button {
-  margin-left: 50px;
-  width: 175px;
-  height: 55px;
-  border-radius: 20px;
-  border: 4px solid white;
-  font-size: 22px;
-  color: white;
-  font-weight: bold;
-  background-color: transparent;
-}
-
-.header > div > div > button:hover {
-  background-color: #53686c;
-  color: white;
-}
-
-.header > div > div > p {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-.gallery-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.gallery {
+  background-color: white;
   padding: 0;
   align-items: center;
   flex-direction: row;
@@ -248,15 +215,15 @@ li.dropdown {
   margin: 35px 0 35px 0;
 }
 
-.gallery-section > div:nth-child(1),
-.gallery-section > div:nth-child(4),
-.gallery-section > div:nth-child(7) {
+.gallery > div:nth-child(1),
+.gallery > div:nth-child(4),
+.gallery > div:nth-child(7) {
   padding-left: 0px;
 }
 
-.gallery-section > div:nth-child(3),
-.gallery-section > div:nth-child(6),
-.gallery-section > div:nth-child(9) {
+.gallery > div:nth-child(3),
+.gallery > div:nth-child(6),
+.gallery > div:nth-child(9) {
   padding-right: 0px;
 }
 
@@ -266,13 +233,13 @@ li.dropdown {
   clear: both;
 }
 
-.column {
+.gallery__column {
   width: 30.53%;
   height: 403px;
   padding: 35px 40px;
 }
 
-.column > img {
+.gallery__column > img {
   width: 100%;
   height: 100%;
 }
@@ -398,39 +365,32 @@ img.hover-shadow {
   cursor: pointer;
 }
 
-.footer {
+footer {
   background-color: #536467;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 75px;
 }
 
-.footer > div {
+.width--80 {
   width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
-
-.footer > div > p {
+.width--80 p {
   margin-right: 20px;
   font-size: 16px;
   color: white;
 }
 
 @media (max-width: 1919px) and (min-width: 1442px) {
-  .column {
+  .gallery__column {
     width: 29.81%;
   }
 }
 @media (max-width: 1441px) and (min-width: 1026px) {
-  .column {
+  .gallery__column {
     width: 29.61%;
   }
 }
 @media (max-width: 1025px) and (min-width: 772px) {
-  .column {
+  .gallery__column {
     width: 29.9999%;
     padding: 20px 25px;
   }
@@ -451,6 +411,11 @@ img.hover-shadow {
 
   .header > div:nth-child(1) {
     width: 40%;
+  }
+}
+@media (max-width: 770px) and (min-width: 426px) {
+  .gallery__column {
+    width: 27.89% !important;
   }
 }
 @media screen and (max-width: 425px) {
@@ -477,7 +442,7 @@ img.hover-shadow {
     width: 100%;
   }
 
-  .gallery-section {
+  .gallery {
     flex-direction: column-reverse;
   }
 

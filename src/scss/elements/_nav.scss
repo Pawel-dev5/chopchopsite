@@ -6,17 +6,15 @@ nav {
     justify-content: center;
     color: black;
     position: absolute;
+    .width--50 {
+        width: 50%;
+        h1 {
+            font-size: 50px;
+            font-weight: 900;
+        }
+    }
 }
-nav > div {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-nav > div > h1 {
-    font-size: 50px;
-    font-weight: 900;
-}
+
 ul {
     list-style-type: none;
     margin: 0;

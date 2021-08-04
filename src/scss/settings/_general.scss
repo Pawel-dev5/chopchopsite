@@ -6,4 +6,50 @@ body {
 }
 button {
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 4px solid #53686c;
+  font-size: 22px;
+  color: #53686c;
+  font-weight: bold;
+  margin-top: 25px;
+}
+button:hover {
+  background-color: #53686c;
+  color: #f9f9f9;
+}
+.heading {
+  margin-top: 0;
+  font-size: 49px;
+  font-weight: bold;
+  color: #53686c;
+}
+.heading--black {
+  color: black;
+}
+.container {
+  padding: 50px 115px 50px 115px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #575756;
+}
+.container--white {
+  background-color: white;
+}
+.container__div {
+  display: flex;
+}
+.container__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__box--start {
+  justify-content: flex-start;
+}
+.column {
+  flex-direction: column;
+  width: 100%;
 }

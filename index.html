@@ -13,10 +13,10 @@
 
 <body>
     <nav>
-        <div>
-            <h1>Grass Studio</h1>
+        <div class="container__box width--50">
+            <h1 class="heading--black">Grass Studio</h1>
         </div>
-        <div>
+        <div class="container__box width--50">
             <ul>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">About</a>
@@ -29,12 +29,12 @@
                 </li>
                 <li><a href="#">Trips</a></li>
                 <li class="dropdown">
-                    <a href="#gallery-section" class="dropbtn">Gallery</a>
+                    <a href="#gallery" class="dropbtn">Gallery</a>
                     <div class="dropdown-content dropdown-gallery">
-                        <a href="#gallery-section">Iceland</a>
-                        <a href="#gallery-section">Norway</a>
-                        <a href="#gallery-section">Arctica</a>
-                        <a href="#gallery-section">Alaska</a>
+                        <a href="#gallery">Iceland</a>
+                        <a href="#gallery">Norway</a>
+                        <a href="#gallery">Arctica</a>
+                        <a href="#gallery">Alaska</a>
                     </div>
                 </li>
                 <li><a href="#">Blog</a></li>
@@ -42,10 +42,10 @@
         </div>
     </nav>
     <section class="header">
-        <div></div>
-        <div>
+        <div class="header-box"></div>
+        <div class="header-box">
             <h1>Outdoor<br /> Photography<br /> is a Journey</h1>
-            <div>
+            <div class="container__box container__box--start">
                 <p>
                     We spend ehree months<br /> exploring Iceland
                 </p>
@@ -53,9 +53,9 @@
             </div>
         </div>
     </section>
-    <section class="second-section">
-        <h1>Section title</h1>
-        <div class="second-section-txt-box">
+    <section class="container container--white">
+        <h1 class="heading">Section title</h1>
+        <div class="container__div">
             <div>
                 <p>
                     Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate , ligula lacinia
@@ -76,10 +76,10 @@
             </div>
         </div>
     </section>
-    <section class="third-section">
-        <h1>Another title</h1>
-        <div class="third-section-photo">
-            <div></div>
+    <section class="container">
+        <h1 class="heading">Another title</h1>
+        <div class="container__box">
+            <div class="container__box--photo"></div>
             <div>
                 <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate , ligula lacinia
                     celerisque tempor, lacus lacus ornare ante. Ac egestas est urna sit amet arcu. consequat posuere.
@@ -95,7 +95,7 @@
                     per</p>
             </div>
         </div>
-        <div class="third-section-text-box">
+        <div class="container__box column">
             <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate , ligula lacinia celerisque
                 tempor, lacus lacus ornare ante. Ac egestas est urna sit amet arcu. consequat posuere. Vestibulum ante
                 ipsum primis in faucibus orci luctus et ultrices posuere. Nulla facilisi. Duis aliquet egestas purus in
@@ -111,41 +111,41 @@
             <button>READ MORE</button>
         </div>
     </section>
-    <section id="gallery-section" class="gallery-section container">
+    <section id="gallery" class="gallery container container__box">
         <!-- Images used to open the lightbox -->
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"
                 onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/fotolia_170367715.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"
                 onclick="openModal();currentSlide(3)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
                 onclick="openModal();currentSlide(4)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
                 onclick="openModal();currentSlide(5)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
                 onclick="openModal();currentSlide(6)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
                 onclick="openModal();currentSlide(7)" class="hover-shadow">
         </div>
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"
                 onclick="openModal();currentSlide(8)" class="hover-shadow">
         </div>
 
-        <div class="column">
+        <div class="gallery__column">
             <img src="./src/assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
                 onclick="openModal();currentSlide(9)" class="hover-shadow">
         </div>
@@ -172,7 +172,8 @@
 
                 <div class="mySlides">
                     <div class="numbertext">4 / 9</div>
-                    <img src="./src/assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg" style="width:100%">
+                    <img src="./src/assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
+                        style="width:100%">
                 </div>
 
                 <div class="mySlides">
@@ -189,7 +190,8 @@
 
                 <div class="mySlides">
                     <div class="numbertext">7 / 9</div>
-                    <img src="./src/assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg" style="width:100%">
+                    <img src="./src/assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
+                        style="width:100%">
                 </div>
 
                 <div class="mySlides">
@@ -199,7 +201,8 @@
 
                 <div class="mySlides">
                     <div class="numbertext">9 / 9</div>
-                    <img src="./src/assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg" style="width:100%">
+                    <img src="./src/assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
+                        style="width:100%">
                 </div>
 
                 <!-- Next/previous controls -->
@@ -209,13 +212,14 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-        <div>
+    <footer class="container__box">
+        <div class="container__box container__box--start width--80">
             <p>All right reserved</p>
             <p>Grass Studio</p>
         </div>
-    </section>
-    <script src="src/scripts.js"></script>
+        </section>
+        <footer src="src/scripts.js">
+            </script>
 
 </body>
 
